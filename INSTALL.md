@@ -65,4 +65,12 @@ Now your folder should have the file ```op1_235-repacked.op1```. Run the normal 
 
 ## Windows / Linux
 
-No instructions yet, sorry.
+windows thingy
+
+install python 3.8x
+install oprepacker and upgrade
+cmd to C:\Users\***your username***\AppData\Roaming\Python\Python38\Scripts and run op1repacker.exe unpack op1_xxx.op1
+
+op1repacker modify C:\Users\***your username***\AppData\Roaming\Python\Python38\Scripts\op1_xxx --options iter presets-iter filter subtle-fx gfx-iter-lab gfx-tape-invert gfx-cwo-moose
+
+
