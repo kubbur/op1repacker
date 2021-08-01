@@ -64,5 +64,52 @@ Now your folder should have the file ```op1_235-repacked.op1```. Run the normal 
 
 
 ## Windows / Linux
+### Download newest python from python.org and install
+check the "add to path" when asked and finish installation
 
-No instructions yet, sorry.
+###download newest op1 firmware
+open cmd and do:
+```pip3 install --user op1repacker```
+
+if it asks you to upgrade pip then do so
+
+```pip3 install --user --upgrade op1repacker```
+
+cd into the folder you have your op1 firmware
+
+```op1repacker.exe unpack op1_243.op1```
+
+###do the mods you want
+```op1repacker modify op1_243 --options iter presets-iter filter subtle-fx gfx-iter-lab gfx-tape-invert gfx-cwo-moose```
+
+expected output from this command should be
+Running database modifications:
+- Enabling "iter" synth...
+- Adding community presets for iter:
+    - crystal_pad
+    - ebullition
+    - feu_doux
+    - iter
+    - korder
+    - lotremkords
+    - pulse_bass
+    - rezpiano
+    - wonky_bass
+    - woodblock
+    - wood_bell
+- Enabling "filter" effect...
+- Modifying FX defaults to be less intensive...
+
+Running graphics modifications:
+- Enabling custom lab graphic for iter...
+- Applying GFX patch "tape-invert"...
+- Applying GFX patch "cwo-moose"...
+done.
+
+###repack the firmware
+```op1repacker repack op1_243```
+
+have your op1 turned off and plugged into your computer
+hold com button and turn it on
+follow on screen instructions
+
